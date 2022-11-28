@@ -40,7 +40,7 @@ namespace Figments
 
 			Status = State.Idle;
 
-			Direct(Opening().Wait);
+			Direct(Opening());
 		}
 
 		public override void _Process(float delta)
@@ -68,9 +68,9 @@ namespace Figments
 			}
 		}
 
-		public void Direct(Action action)
+		public void Direct(Task task)
 		{
-			tasks.Enqueue(new Task(action));
+			tasks.Enqueue(new Task(task.Wait));
 		}
 
 		public Task SelfDirect(string nodeName)
@@ -89,7 +89,7 @@ namespace Figments
 		{
 			await Globals.Root.LoadScene("res://UI/Splash.tscn", true); //Splash scene gets loaded (in RAM, ready for use) and added
 			await Globals.Overlay.FadeOutBlack(); //Splash is displayed
-			Task loadMainMenu = UseLoader(Globals.Root.LoadScene("res://UI/MainMenu.tscn", true)); //Main menu starts loading and shows loader
+			Task loadMainMenu = UseLoader(Globals.Root.LoadScene("res://UI/MainMenu.tscn", false)); //Main menu starts loading and shows loader
 			await SelfDirect("Splash"); //Do whatever Splash is supposed to do
 			await Globals.Overlay.FadeInBlack(); //Splash is hidden
 			Globals.Root.RemoveScene("Splash"); //Splash gets removed from the tree
