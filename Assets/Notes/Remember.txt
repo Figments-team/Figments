@@ -1,0 +1,5 @@
+Godot CanvasLayers
+2 - Overlay di sistema
+1 - HUD di gioco
+0 - Nodi 2D / UI (se non overlay)
+...

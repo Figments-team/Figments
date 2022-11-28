@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/thunderclap-sound-effect.mp3-2062969c4333e5e969909f03f85a08b1.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/thunderclap-sound-effect/thunderclap-sound-effect.mp3"
+dest_files=[ "res://.import/thunderclap-sound-effect.mp3-2062969c4333e5e969909f03f85a08b1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

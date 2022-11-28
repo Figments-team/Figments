@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/heavy-rain-sound.mp3-6ee472bedd43786659daa617fe62f52b.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/heavy-rain-sound/heavy-rain-sound.mp3"
+dest_files=[ "res://.import/heavy-rain-sound.mp3-6ee472bedd43786659daa617fe62f52b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
