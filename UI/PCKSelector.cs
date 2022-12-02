@@ -12,7 +12,8 @@ namespace Figments
 
         public void OnFileSelected(string path)
         {
-            ProjectSettings.LoadResourcePack(path);
+            GD.Print(path);
+            GD.Print(ProjectSettings.LoadResourcePack(path));
             this.Visible = false;
             GetNode<SceneSelector>("../SceneSelector").Visible = true;
         }

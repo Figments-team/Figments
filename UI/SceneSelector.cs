@@ -1,5 +1,5 @@
 using Godot;
-using System;
+using System.Threading.Tasks;
 
 namespace Figments
 {
@@ -10,10 +10,18 @@ namespace Figments
             Connect("file_selected", this, "OnFileSelected");
         }
 
+        string selectedPath;
+
         public void OnFileSelected(string path)
         {
+            selectedPath = path;
+            Globals.Director.Direct(SwitchToSelected());
+        }
+
+        public async Task SwitchToSelected()
+        {
             Globals.Root.RemoveAll();
-            Globals.Root.LoadScene(path);
+            await Globals.Root.LoadScene(selectedPath, true);
         }
     }
 }

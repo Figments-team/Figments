@@ -45,7 +45,7 @@ namespace Figments
 
 		public override void _Process(float delta)
 		{
-			GD.Print(Status);
+			GD.Print(_Status);
 			switch(Status)
 			{
 				case State.Idle:
@@ -73,10 +73,10 @@ namespace Figments
 			tasks.Enqueue(new Task(task.Wait));
 		}
 
-		public Task SelfDirect(string nodeName)
+		public async Task SelfDirect(string nodeName)
 		{
 			IDirectable scene = (IDirectable)Globals.Root.GetNode(nodeName);
-			return scene.SelfDirect(); //Waits for SelfDirect 
+			await scene.SelfDirect(); //Waits for SelfDirect 
 		}
 
 		public Task UseLoader(Task taskToLoad) //Displays the loader along with task
@@ -88,17 +88,13 @@ namespace Figments
 		private async Task Opening()
 		{
 			await Globals.Root.LoadScene("res://UI/Splash.tscn", true); //Splash scene gets loaded (in RAM, ready for use) and added
-			await Globals.Overlay.FadeOutBlack(); //Splash is displayed
 			Task loadMainMenu = UseLoader(Globals.Root.LoadScene("res://UI/MainMenu.tscn", false)); //Main menu starts loading and shows loader
 			await SelfDirect("Splash"); //Do whatever Splash is supposed to do
-			await Globals.Overlay.FadeInBlack(); //Splash is hidden
 			Globals.Root.RemoveScene("Splash"); //Splash gets removed from the tree
 			await Globals.Root.WaitTime(1); //Wait 1 second
 			await loadMainMenu; //Wait for MainMenu loading if still isn't done
 			Globals.Root.AddLoadedScene(); //MainMenu gets added to the tree
-			Globals.MusicPlayer.PlayMusic("res://Assets/Music/Figments.wav"); //Menu music starts playing
-			await Globals.Overlay.FadeOutBlack(); //MainMenu is displayed
-			await SelfDirect("MainMenu"); //Do whatever MainMenu is supposed to do*/
+			await SelfDirect("MainMenu"); //Do whatever MainMenu is supposed to do
 		}
 	}
 }

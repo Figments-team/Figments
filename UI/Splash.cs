@@ -8,7 +8,9 @@ namespace Figments
 	{
 		public async Task SelfDirect()
 		{
+			await Globals.Overlay.FadeOutBlack();
 			await ToSignal(GetTree().CreateTimer(4), "timeout");
+			await Globals.Overlay.FadeInBlack();
 		}
 	}
 }
