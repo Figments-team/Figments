@@ -2,14 +2,18 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/JamesIntro.mp3-5860b3c1e31503e91e8671a1db469c65.mp3str"
+uid="uid://bxxr6rb2ukbgr"
+path="res://.godot/imported/JamesIntro.mp3-5860b3c1e31503e91e8671a1db469c65.mp3str"
 
 [deps]
 
 source_file="res://Assets/Sounds/ModifiedAssets/JamesIntro.mp3"
-dest_files=[ "res://.import/JamesIntro.mp3-5860b3c1e31503e91e8671a1db469c65.mp3str" ]
+dest_files=["res://.godot/imported/JamesIntro.mp3-5860b3c1e31503e91e8671a1db469c65.mp3str"]
 
 [params]
 
 loop=true
 loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

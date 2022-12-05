@@ -11,8 +11,8 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1.5, 2 )
+"points": PackedFloat32Array( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PackedFloat32Array( 0, 0.5, 1.5, 2 )
 }
 tracks/1/type = "bezier"
 tracks/1/path = NodePath("Square2:modulate:a")
@@ -21,8 +21,8 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1 )
+"points": PackedFloat32Array( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PackedFloat32Array( 0, 0.5, 1 )
 }
 tracks/2/type = "bezier"
 tracks/2/path = NodePath("Square3:modulate:a")
@@ -31,8 +31,8 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0.5, 1, 1.5 )
+"points": PackedFloat32Array( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PackedFloat32Array( 0.5, 1, 1.5 )
 }
 tracks/3/type = "bezier"
 tracks/3/path = NodePath("Square4:modulate:a")
@@ -41,54 +41,54 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 1, 1.5, 2 )
+"points": PackedFloat32Array( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
+"times": PackedFloat32Array( 1, 1.5, 2 )
 }
 
 [node name="LoadingSquares" type="Control"]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 
 [node name="Animator" type="AnimationPlayer" parent="."]
 autoplay = "Loading"
 anims/Loading = SubResource( 1 )
 
 [node name="Square1" type="ColorRect" parent="."]
-margin_right = 20.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( -281.274, 23.3997 )
+offset_right = 20.0
+offset_bottom = 20.0
+pivot_offset = Vector2( -281.274, 23.3997 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Square2" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 20.0
-margin_right = 40.0
-margin_bottom = 20.0
-rect_pivot_offset = Vector2( -281.274, 23.3997 )
+offset_left = 20.0
+offset_right = 40.0
+offset_bottom = 20.0
+pivot_offset = Vector2( -281.274, 23.3997 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Square3" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 20.1129
-margin_top = 20.1564
-margin_right = 40.1129
-margin_bottom = 40.1564
-rect_pivot_offset = Vector2( -281.274, 23.3997 )
+offset_left = 20.1129
+offset_top = 20.1564
+offset_right = 40.1129
+offset_bottom = 40.1564
+pivot_offset = Vector2( -281.274, 23.3997 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Square4" type="ColorRect" parent="."]
 modulate = Color( 1, 1, 1, 0 )
-margin_left = 0.118355
-margin_top = 20.0785
-margin_right = 20.1184
-margin_bottom = 40.0785
-rect_pivot_offset = Vector2( -281.274, 23.3997 )
+offset_left = 0.118355
+offset_top = 20.0785
+offset_right = 20.1184
+offset_bottom = 40.0785
+pivot_offset = Vector2( -281.274, 23.3997 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
