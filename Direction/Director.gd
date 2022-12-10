@@ -4,9 +4,6 @@ enum state { UNKNOWN, STARTING, WAITING, WORKING, IDLE }
 signal director_state_changed(old_state, new_state)
 var status = state.UNKNOWN : set = state_set
 
-var current_task : Callable
-var tasks : Array
-
 var Root : Node
 
 func state_set(value):
@@ -21,23 +18,12 @@ func _ready():
 	await Root.ready
 	status = state.IDLE
 	
-	direct(await opening())
+	direct(opening)
 
-func _process(delta):
-	match status:
-		state.IDLE:
-			if tasks.size() > 0:
-				status = state.WORKING
-				current_task = tasks.pop_front().call_func()
-		state.WORKING, state.WAITING:
-			if ! current_task.is_valid():
-				current_task = null
-				status = state.IDLE
-
-func direct(what: Callable):
-	tasks.append(what)
+func direct(coroutine: Callable):
+	status = state.WORKING
+	await coroutine.call()
+	status = state.IDLE
 
 func opening():
-	print("lol")
-	await get_tree().create_timer(5).timeout
-	print("test")
+	Overlay.fade_from_black(5)

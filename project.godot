@@ -12,8 +12,8 @@ config_version=5
 
 config/name="Figments"
 run/main_scene="res://Direction/Root.tscn"
-config/features=PackedStringArray("4.0")
-config/icon="res://icon.png"
+config/features=PackedStringArray("4.0", "Mobile")
+config/icon="res://icon.svg"
 
 [autoload]
 
@@ -23,26 +23,10 @@ MusicPlayer="*res://Direction/MusicPlayer.tscn"
 
 [display]
 
+window/size/viewport_width=1280
+window/size/viewport_height=720
 window/size/resizable=false
-window/size/width=1280
-window/size/height=720
-
-[gui]
-
-common/drop_mouse_on_gui_input_disabled=true
-
-[locale]
-
-translations=PackedStringArray("res://Miscellaneous/Translation/text.en.translation", "res://Miscellaneous/Translation/text.it.translation")
-
-[mono]
-
-project/assembly_name="Figments"
-
-[physics]
-
-common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+renderer/rendering_method="mobile"

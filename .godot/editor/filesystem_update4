@@ -1,2 +1,5 @@
-res://Direction/Director.tscn
+res://Direction/Root.tscn
+res://Direction/Overlay.tscn
+res://UI/LoadingFigments.tscn
+res://Direction/Overlay.gd
 res://Direction/Director.gd

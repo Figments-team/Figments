@@ -1,72 +1,32 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://bfxmcw11fy47u"]
 
-[ext_resource path="res://UI/LoadingFigments.tscn" type="PackedScene" id=3]
+[ext_resource type="Script" path="res://Direction/Overlay.gd" id="1_7nvf0"]
+[ext_resource type="PackedScene" uid="uid://cb13ok7u2n82e" path="res://UI/LoadingFigments.tscn" id="1_k2w7a"]
 
-[sub_resource type="Animation" id=5]
-resource_name = "FadeInBlack"
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("BlackPanel:modulate:a")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PackedFloat32Array( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PackedFloat32Array( 0, 1 )
-}
-
-[sub_resource type="Animation" id=4]
-resource_name = "FadeOutBlack"
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("BlackPanel:modulate:a")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PackedFloat32Array( 1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0 ),
-"times": PackedFloat32Array( 0, 1 )
-}
-
-[sub_resource type="Animation" id=7]
-resource_name = "ShowOrHideLoader"
-length = 0.5
-tracks/0/type = "bezier"
-tracks/0/path = NodePath("Loading:modulate:a")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PackedFloat32Array( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PackedFloat32Array( 0, 0.5 )
-}
-
-[sub_resource type="StyleBoxFlat" id=3]
-bg_color = Color( 0, 0, 0, 1 )
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6x24o"]
+bg_color = Color(0, 0, 0, 1)
 
 [node name="Overlay" type="CanvasLayer"]
-process_mode = 2
 layer = 2
-
-[node name="PanelAnimator" type="AnimationPlayer" parent="."]
-anims/FadeInBlack = SubResource( 5 )
-anims/FadeOutBlack = SubResource( 4 )
-
-[node name="LoadingAnimator" type="AnimationPlayer" parent="."]
-anims/ShowOrHideLoader = SubResource( 7 )
+script = ExtResource("1_7nvf0")
 
 [node name="BlackPanel" type="Panel" parent="."]
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_styles/panel = SubResource( 3 )
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_6x24o")
 
-[node name="Loading" parent="." instance=ExtResource( 3 )]
+[node name="Loading" parent="." instance=ExtResource("1_k2w7a")]
 visible = false
-modulate = Color( 1, 1, 1, 0 )
+anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -162.0
-offset_top = 40.0
-offset_right = -44.0
-offset_bottom = 83.0
+offset_left = -129.0
+offset_top = 30.0
+offset_right = -30.0
+offset_bottom = 69.0
+grow_horizontal = 0
