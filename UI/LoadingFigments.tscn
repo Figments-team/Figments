@@ -51,6 +51,7 @@ libraries = {
 }
 
 [node name="Figments" type="Label" parent="."]
+layout_mode = 0
 offset_right = 99.0
 offset_bottom = 39.0
 theme_override_fonts/font = ExtResource("1")

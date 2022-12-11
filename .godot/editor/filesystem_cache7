@@ -1,6 +1,8 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1670691898
+::res://::1670746630
+export_presets.cfg::TextFile::-1::1670694615::0::1::::<><>::
 icon.svg::CompressedTexture2D::1696701121033368408::1670316190::1670316197::1::::<><>::
+README.md::TextFile::-1::1669391757::0::1::::<><>::
 ::res://Assets/::1670320378
 ::res://Assets/Fonts/::1670320378
 ::res://Assets/Fonts/always_together/::1670320418
@@ -41,9 +43,9 @@ JamesLogoTransparentWhite.png::CompressedTexture2D::3632679536203511316::1664003
 ::res://Assets/Images/Projects and Raw/::1670320378
 ::res://Assets/Music/::1670320428
 Figments.wav::AudioStreamWAV::7401538261216486863::1634107332::1670320426::1::::<><>::
-Imagination.wav::AudioStreamWAV::6272341404340411651::1638965420::1670320427::1::::<><>::
-JamesMenu.wav::AudioStreamWAV::2852173688680732052::1654431624::1670320428::1::::<><>::
-Who James is.wav::AudioStreamWAV::3458890929633170832::1634107332::1670320428::1::::<><>::
+Imagination.wav::AudioStreamWAV::6272341404340411651::1638965420::1670748902::1::::<><>::
+JamesMenu.wav::AudioStreamWAV::2852173688680732052::1654431624::1670748920::1::::<><>::
+Who James is.wav::AudioStreamWAV::3458890929633170832::1634107332::1670748913::1::::<><>::
 ::res://Assets/Notes/::1670320378
 Remember.txt::TextFile::-1::1652364304::0::1::::<><>::
 ::res://Assets/Sounds/::1670320378
@@ -54,12 +56,16 @@ Read.txt::TextFile::-1::1507477978::0::1::::<><>::
 JamesIntro.mp3::AudioStreamMP3::4049333219894936849::1643134922::1670320418::1::::<><>::
 ::res://Assets/Sounds/thunderclap-sound-effect/::1670320418
 thunderclap-sound-effect.mp3::AudioStreamMP3::3719502063707870352::1609951252::1670320418::1::::<><>::
-::res://Direction/::1670612873
-Director.gd::GDScript::-1::1670612158::0::1::::<>Node<>::
+::res://Direction/::1670748825
+Director.gd::GDScript::-1::1670748823::0::1::::<>Node<>::
 Director.tscn::PackedScene::8297546343527755241::1670610316::0::1::::<><>::res://Direction/Director.gd
-MusicPlayer.tscn::PackedScene::935811212144920461::1670406354::0::1::::<><>::
-Overlay.tscn::PackedScene::2785578962595243800::1670612871::0::1::::<><>::uid://cb13ok7u2n82e
-Root.gd::GDScript::-1::1670612138::0::1::::<>Node<>::
-Root.tscn::PackedScene::86488911877028461::1670612873::0::1::::<><>::res://Direction/Root.gd
-::res://UI/::1670612769
-LoadingFigments.tscn::PackedScene::4898429685154500534::1670612769::0::1::::<><>::uid://7pkpgtpgjcwv
+MusicPlayer.tscn::PackedScene::935811212144920461::1670748825::0::1::::<><>::res://Direction/MusicPlayer.gd
+Overlay.gd::GDScript::-1::1670748425::0::1::::<>CanvasLayer<>::
+Overlay.tscn::PackedScene::2785578962595243800::1670747480::0::1::::<><>::res://Direction/Overlay.gd<>uid://cb13ok7u2n82e
+MusicPlayer.gd::GDScript::-1::1670748793::0::1::::<>AudioStreamPlayer<>::
+Root.gd::GDScript::-1::1670747094::0::1::::RootNode<>Node<>::
+Root.tscn::PackedScene::86488911877028461::1670691904::0::1::::<><>::res://Direction/Root.gd
+::res://UI/::1670748825
+LoadingFigments.tscn::PackedScene::4898429685154500534::1670747846::0::1::::<><>::uid://7pkpgtpgjcwv
+Splash.gd::GDScript::-1::1670747518::0::1::::<>Control<>::
+Splash.tscn::PackedScene::7289196137570968588::1670748825::0::1::::<><>::res://UI/Splash.gd<>uid://hkpurab7cktd

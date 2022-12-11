@@ -8,6 +8,34 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "Node",
+"class": &"DirectorNode",
+"language": &"GDScript",
+"path": "res://Direction/Director.gd"
+}, {
+"base": "AudioStreamPlayer",
+"class": &"MusicPlayerNode",
+"language": &"GDScript",
+"path": "res://Direction/MusicPlayer.gd"
+}, {
+"base": "CanvasLayer",
+"class": &"OverlayNode",
+"language": &"GDScript",
+"path": "res://Direction/Overlay.gd"
+}, {
+"base": "Node",
+"class": &"RootNode",
+"language": &"GDScript",
+"path": "res://Direction/Root.gd"
+}]
+_global_script_class_icons={
+"DirectorNode": "",
+"MusicPlayerNode": "",
+"OverlayNode": "",
+"RootNode": ""
+}
+
 [application]
 
 config/name="Figments"

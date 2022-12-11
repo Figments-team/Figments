@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://rf075lklh8tj"]
+
+[ext_resource type="FontFile" uid="uid://hkpurab7cktd" path="res://Assets/Fonts/klik/Klik-Light.otf" id="1_ligbr"]
+[ext_resource type="FontFile" uid="uid://7pkpgtpgjcwv" path="res://Assets/Fonts/victorian_parlor/Victorian Parlor Vintage Alternate_free.otf" id="2_6hq8w"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -133.0
+offset_top = 100.0
+offset_right = 133.0
+offset_bottom = 199.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_6hq8w")
+theme_override_font_sizes/font_size = 96
+text = "Figments"
+
+[node name="Information" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -95.0
+offset_top = -120.0
+offset_right = 95.0
+offset_bottom = -94.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("1_ligbr")
+theme_override_font_sizes/font_size = 18
+text = "Press any key to continue"
