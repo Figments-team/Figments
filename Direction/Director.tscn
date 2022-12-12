@@ -1,7 +1,6 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=2 format=3 uid="uid://dqhnm1v7ua6dh"]
 
-[ext_resource path="res://Direction/Director.cs" type="Script" id=1]
+[ext_resource type="Script" path="res://Direction/Director.gd" id="1_85ngq"]
 
 [node name="Director" type="Node"]
-pause_mode = 2
-script = ExtResource( 1 )
+script = ExtResource("1_85ngq")

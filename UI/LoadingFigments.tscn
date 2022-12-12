@@ -1,78 +1,59 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=5 format=3 uid="uid://cb13ok7u2n82e"]
 
-[ext_resource path="res://Assets/Fonts/victorian_parlor/Victorian Parlor Vintage Alternate_free.otf" type="DynamicFontData" id=1]
+[ext_resource type="FontFile" uid="uid://7pkpgtpgjcwv" path="res://Assets/Fonts/victorian_parlor/Victorian Parlor Vintage Alternate_free.otf" id="1"]
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id="1"]
 resource_name = "Loading"
-loop = true
+loop_mode = 1
 tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
 tracks/0/path = NodePath("Figments:modulate:a")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 0.4, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 0.5, 1 )
+"handle_modes": PackedInt32Array(0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0.498039, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.5, 1)
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id="2"]
 length = 0.001
 tracks/0/type = "bezier"
-tracks/0/path = NodePath("Figments:modulate:r")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
+tracks/0/path = NodePath("Figments:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
 tracks/0/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath("Figments:modulate:g")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
-}
-tracks/2/type = "bezier"
-tracks/2/path = NodePath("Figments:modulate:b")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
-}
-tracks/3/type = "bezier"
-tracks/3/path = NodePath("Figments:modulate:a")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/keys = {
-"points": PoolRealArray( 1, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0 )
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
 }
 
-[sub_resource type="DynamicFont" id=3]
-size = 42
-font_data = ExtResource( 1 )
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_id305"]
+_data = {
+"Loading": SubResource("1"),
+"RESET": SubResource("2")
+}
 
 [node name="Loading" type="Control"]
-margin_right = 118.0
-margin_bottom = 43.0
+layout_mode = 3
+anchors_preset = 0
+offset_right = 99.0
+offset_bottom = 39.0
+size_flags_horizontal = 4
 
 [node name="Animator" type="AnimationPlayer" parent="."]
-anims/Loading = SubResource( 1 )
-anims/RESET = SubResource( 2 )
+autoplay = "Loading"
+libraries = {
+"": SubResource("AnimationLibrary_id305")
+}
 
 [node name="Figments" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
-custom_fonts/font = SubResource( 3 )
+layout_mode = 0
+offset_right = 99.0
+offset_bottom = 39.0
+theme_override_fonts/font = ExtResource("1")
+theme_override_font_sizes/font_size = 36
 text = "Figments"

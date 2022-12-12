@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/Figments.wav-3254bf07c7531833c619b21fe5f6e9b6.sample"
+type="AudioStreamWAV"
+uid="uid://ddpmivmyv6nn0"
+path="res://.godot/imported/Figments.wav-3254bf07c7531833c619b21fe5f6e9b6.sample"
 
 [deps]
 
 source_file="res://Assets/Music/Figments.wav"
-dest_files=[ "res://.import/Figments.wav-3254bf07c7531833c619b21fe5f6e9b6.sample" ]
+dest_files=["res://.godot/imported/Figments.wav-3254bf07c7531833c619b21fe5f6e9b6.sample"]
 
 [params]
 

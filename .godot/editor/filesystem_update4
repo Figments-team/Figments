@@ -1,0 +1,10 @@
+res://Direction/Overlay.tscn
+res://Direction/Director.gd
+res://Direction/Overlay.gd
+res://Direction/Root.gd
+res://UI/Splash.tscn
+res://UI/Splash.gd
+res://UI/LoadingFigments.tscn
+res://Direction/MusicPlayer.tscn
+res://Direction/MusicPlayer.gd
+res://UI/MainMenu.tscn
