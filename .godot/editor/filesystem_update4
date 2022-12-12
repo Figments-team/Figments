@@ -1,1 +1,5 @@
 res://UI/MainMenu.tscn
+res://UI/LoadPack.gd
+res://Direction/Root.gd
+res://Direction/MusicPlayer.gd
+res://Direction/Director.gd

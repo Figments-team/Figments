@@ -7,7 +7,7 @@ var loading_scene_path : String
 func _ready():
 	set_process(false)
 
-func _process(delta):
+func _process(_delta):
 	var loading_status = ResourceLoader.load_threaded_get_status(loading_scene_path)
 	if loading_status != ResourceLoader.THREAD_LOAD_IN_PROGRESS:
 		emit_signal("scene_load_finished")
@@ -27,12 +27,11 @@ func load_scene(path: String, also_add: bool = true):
 		add_loaded_scene()
 
 func add_loaded_scene():
-	var loading_status = ResourceLoader.load_threaded_get_status(loading_scene_path)
 	var loaded_scene : PackedScene = ResourceLoader.load_threaded_get(loading_scene_path)
 	add_child(loaded_scene.instantiate())
 
-func remove_scene(name : String):
+func remove_scene(scene_name : String):
 	for node in get_children():
-		if node.name == name:
+		if node.name == scene_name:
 			node.queue_free()
 			return
