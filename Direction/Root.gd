@@ -18,13 +18,15 @@ func wait_loading_or_skip():
 	if loading_status == ResourceLoader.THREAD_LOAD_IN_PROGRESS:
 		await scene_load_finished
 
-func load_scene(path: String, also_add: bool = true):
+func load_scene(path: String):
 	loading_scene_path = path
 	ResourceLoader.load_threaded_request(loading_scene_path)
 	set_process(true)
-	if also_add:
-		await scene_load_finished
-		add_loaded_scene()
+	await scene_load_finished
+
+func load_and_add_scene(path: String):
+	await load_scene(path)
+	add_loaded_scene()
 
 func add_loaded_scene():
 	var loaded_scene : PackedScene = ResourceLoader.load_threaded_get(loading_scene_path)
@@ -35,3 +37,7 @@ func remove_scene(scene_name : String):
 		if node.name == scene_name:
 			node.queue_free()
 			return
+
+func remove_all_scenes():
+	for node in get_children():
+		node.queue_free()

@@ -30,8 +30,8 @@ func self_direct(node_name: String):
 
 func opening():
 	await get_tree().create_timer(1).timeout
-	await Root.load_scene("res://UI/Splash.tscn")
-	Root.load_scene("res://UI/MainMenu.tscn", false)
+	await Root.load_and_add_scene("res://UI/Splash.tscn")
+	Root.load_scene("res://UI/MainMenu.tscn")
 	await Overlay.fade_from_black()
 	await self_direct("Splash")
 	await Overlay.fade_to_black()
@@ -40,3 +40,4 @@ func opening():
 	Root.add_loaded_scene()
 	MusicPlayer.play_ost("Figments")
 	await Overlay.fade_from_black()
+	await self_direct("MainMenu")

@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://rf075lklh8tj"]
+[gd_scene load_steps=6 format=3 uid="uid://rf075lklh8tj"]
 
+[ext_resource type="Script" path="res://UI/MainMenu.gd" id="1_vityk"]
 [ext_resource type="FontFile" uid="uid://7pkpgtpgjcwv" path="res://Assets/Fonts/victorian_parlor/Victorian Parlor Vintage Alternate_free.otf" id="2_6hq8w"]
 
 [sub_resource type="Gradient" id="Gradient_rt63f"]
@@ -20,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_vityk")
 
 [node name="Background" type="Panel" parent="."]
 layout_mode = 1
