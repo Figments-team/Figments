@@ -1,6 +1,2 @@
-res://UI/MainMenu.tscn
-res://UI/MainMenu.gd
-res://Direction/Root.gd
 res://Direction/Root.tscn
-res://Direction/Director.gd
-res://Direction/IO.gd
+res://UI/MainMenu.tscn
