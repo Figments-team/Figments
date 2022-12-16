@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bfxmcw11fy47u"]
 
-[ext_resource type="Script" path="res://Direction/Overlay.gd" id="1_7nvf0"]
+[ext_resource type="Script" path="res://Framework/Overlay.gd" id="1_clkkk"]
 [ext_resource type="PackedScene" uid="uid://cb13ok7u2n82e" path="res://UI/LoadingFigments.tscn" id="1_k2w7a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6x24o"]
@@ -8,7 +8,7 @@ bg_color = Color(0, 0, 0, 1)
 
 [node name="Overlay" type="CanvasLayer"]
 layer = 2
-script = ExtResource("1_7nvf0")
+script = ExtResource("1_clkkk")
 
 [node name="BlackPanel" type="Panel" parent="."]
 anchors_preset = 15

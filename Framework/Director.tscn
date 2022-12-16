@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqhnm1v7ua6dh"]
+
+[ext_resource type="Script" path="res://Framework/Director.gd" id="1_78syt"]
+
+[node name="Director" type="Node"]
+script = ExtResource("1_78syt")

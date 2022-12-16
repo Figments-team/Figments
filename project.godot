@@ -12,27 +12,27 @@ _global_script_classes=[{
 "base": "Node",
 "class": &"DirectorNode",
 "language": &"GDScript",
-"path": "res://Direction/Director.gd"
+"path": "res://Framework/Director.gd"
 }, {
 "base": "RefCounted",
 "class": &"IO",
 "language": &"GDScript",
-"path": "res://Direction/IO.gd"
+"path": "res://Framework/IO.gd"
 }, {
 "base": "AudioStreamPlayer",
 "class": &"MusicPlayerNode",
 "language": &"GDScript",
-"path": "res://Direction/MusicPlayer.gd"
+"path": "res://Framework/MusicPlayer.gd"
 }, {
 "base": "CanvasLayer",
 "class": &"OverlayNode",
 "language": &"GDScript",
-"path": "res://Direction/Overlay.gd"
+"path": "res://Framework/Overlay.gd"
 }, {
 "base": "Node",
 "class": &"RootNode",
 "language": &"GDScript",
-"path": "res://Direction/Root.gd"
+"path": "res://Framework/Root.gd"
 }]
 _global_script_class_icons={
 "DirectorNode": "",
@@ -45,15 +45,15 @@ _global_script_class_icons={
 [application]
 
 config/name="Figments"
-run/main_scene="res://Direction/Root.tscn"
+run/main_scene="res://Framework/Root.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.svg"
 
 [autoload]
 
-Director="*res://Direction/Director.tscn"
-Overlay="*res://Direction/Overlay.tscn"
-MusicPlayer="*res://Direction/MusicPlayer.tscn"
+Director="*res://Framework/Director.tscn"
+MusicPlayer="*res://Framework/MusicPlayer.tscn"
+Overlay="*res://Framework/Overlay.tscn"
 
 [display]
 

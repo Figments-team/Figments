@@ -1,4 +1,4 @@
-res://UI/MainMenu.tscn
-res://UI/MainMenu.gd
-res://Direction/Director.gd
-res://Direction/Root.tscn
+res://Framework/Director.tscn
+res://Framework/MusicPlayer.tscn
+res://Framework/Overlay.tscn
+res://Framework/Root.tscn
