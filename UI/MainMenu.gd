@@ -6,4 +6,4 @@ func self_direct():
 	await Overlay.fade_to_black()
 	await Director.Root.load_and_add_scene("res://Entry.tscn")
 	await Overlay.fade_from_black()
-	Director.Root.remove_scene("MainMenu")
+	queue_free()

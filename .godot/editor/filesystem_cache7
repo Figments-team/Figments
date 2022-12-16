@@ -1,5 +1,5 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1670946580
+::res://::1671194004
 export_presets.cfg::TextFile::-1::1670859602::0::1::::<><>::
 icon.svg::CompressedTexture2D::1696701121033368408::1670859602::1670859602::1::::<><>::
 README.md::TextFile::-1::1669391757::0::1::::<><>::
@@ -56,7 +56,7 @@ Read.txt::TextFile::-1::1507477978::0::1::::<><>::
 JamesIntro.mp3::AudioStreamMP3::4049333219894936849::1643134922::1670859602::1::::<><>::
 ::res://Assets/Sounds/thunderclap-sound-effect/::1670859602
 thunderclap-sound-effect.mp3::AudioStreamMP3::3719502063707870352::1609951252::1670859602::1::::<><>::
-::res://Direction/::1670924681
+::res://Direction/::1670946610
 Director.gd::GDScript::-1::1670924493::0::1::::DirectorNode<>Node<>::
 Director.tscn::PackedScene::8297546343527755241::1670859602::0::1::::<><>::res://Direction/Director.gd
 IO.gd::GDScript::-1::1670923982::0::1::::IO<>RefCounted<>::
@@ -65,10 +65,10 @@ MusicPlayer.tscn::PackedScene::935811212144920461::1670859602::0::1::::<><>::res
 Overlay.gd::GDScript::-1::1670859602::0::1::::OverlayNode<>CanvasLayer<>::
 Overlay.tscn::PackedScene::2785578962595243800::1670859602::0::1::::<><>::res://Direction/Overlay.gd<>uid://cb13ok7u2n82e
 Root.gd::GDScript::-1::1670919571::0::1::::RootNode<>Node<>::
-Root.tscn::PackedScene::86488911877028461::1670924681::0::1::::<><>::res://Direction/Root.gd
-::res://UI/::1670924757
+Root.tscn::PackedScene::86488911877028461::1670946610::0::1::::<><>::res://Direction/Root.gd
+::res://UI/::1670946610
 LoadingFigments.tscn::PackedScene::4898429685154500534::1670859602::0::1::::<><>::uid://7pkpgtpgjcwv
 MainMenu.gd::GDScript::-1::1670924737::0::1::::<>Control<>::
-MainMenu.tscn::PackedScene::1205108894003688443::1670924757::0::1::::<><>::res://UI/MainMenu.gd<>uid://7pkpgtpgjcwv
+MainMenu.tscn::PackedScene::1205108894003688443::1670946610::0::1::::<><>::res://UI/MainMenu.gd<>uid://7pkpgtpgjcwv
 Splash.gd::GDScript::-1::1670859602::0::1::::<>Control<>::
 Splash.tscn::PackedScene::7289196137570968588::1670859602::0::1::::<><>::res://UI/Splash.gd<>uid://hkpurab7cktd
