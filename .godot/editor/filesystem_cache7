@@ -1,6 +1,6 @@
 0b7126e0c6e86d3ec295a72f5aa6e0bd
-::res://::1671194787
-export_presets.cfg::TextFile::-1::1670859602::0::1::::<><>::
+::res://::1671365553
+export_presets.cfg::TextFile::-1::1671194903::0::1::::<><>::
 icon.svg::CompressedTexture2D::1696701121033368408::1670859602::1670859602::1::::<><>::
 README.md::TextFile::-1::1669391757::0::1::::<><>::
 ::res://Assets/::1671194445
@@ -14,16 +14,16 @@ Victorian Parlor Vintage Alternate_free.otf::FontFile::2277642964745461969::1634
 Victorian Parlor Vintage Alternate_free.ttf::FontFile::8247243677002798982::1634107332::1670859602::1::::<><>::
 ::res://Assets/Music/::1671194441
 Figments.wav::AudioStreamWAV::7401538261216486863::1634107332::1670859602::1::::<><>::
-::res://Framework/::1671194760
+::res://Framework/::1671195022
 Director.gd::GDScript::-1::1671194680::0::1::::DirectorNode<>Node<>::
-Director.tscn::PackedScene::8297546343527755241::1671194760::0::1::::<><>::res://Direction/Director.gd
+Director.tscn::PackedScene::8297546343527755241::1671194841::0::1::::<><>::res://Framework/Director.gd
 IO.gd::GDScript::-1::1671194680::0::1::::IO<>RefCounted<>::
 MusicPlayer.gd::GDScript::-1::1671194680::0::1::::MusicPlayerNode<>AudioStreamPlayer<>::
-MusicPlayer.tscn::PackedScene::935811212144920461::1671194680::0::1::::<><>::res://Direction/MusicPlayer.gd
+MusicPlayer.tscn::PackedScene::935811212144920461::1671194849::0::1::::<><>::res://Framework/MusicPlayer.gd
 Overlay.gd::GDScript::-1::1671194680::0::1::::OverlayNode<>CanvasLayer<>::
-Overlay.tscn::PackedScene::2785578962595243800::1671194680::0::1::::<><>::res://Direction/Overlay.gd<>uid://cb13ok7u2n82e
+Overlay.tscn::PackedScene::2785578962595243800::1671194856::0::1::::<><>::res://Framework/Overlay.gd<>uid://cb13ok7u2n82e
 Root.gd::GDScript::-1::1671194680::0::1::::RootNode<>Node<>::
-Root.tscn::PackedScene::86488911877028461::1671194756::0::1::::<><>::res://Direction/Root.gd
+Root.tscn::PackedScene::86488911877028461::1671195022::0::1::::<><>::res://Framework/Root.gd
 ::res://UI/::1671194212
 LoadingFigments.tscn::PackedScene::4898429685154500534::1670859602::0::1::::<><>::uid://7pkpgtpgjcwv
 MainMenu.gd::GDScript::-1::1671194209::0::1::::<>Control<>::
