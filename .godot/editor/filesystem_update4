@@ -1,3 +1,6 @@
+res://Framework/Figments.gd
+res://Framework/Director.tscn
+res://Framework/MusicPlayer.tscn
+res://Framework/Overlay.tscn
 res://Framework/Root.tscn
-res://UI/MainMenu.gd
-res://Framework/IO.gd
+res://Framework/Director.gd

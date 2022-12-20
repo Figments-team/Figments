@@ -15,9 +15,9 @@ _global_script_classes=[{
 "path": "res://Framework/Director.gd"
 }, {
 "base": "RefCounted",
-"class": &"IO",
+"class": &"Figments",
 "language": &"GDScript",
-"path": "res://Framework/IO.gd"
+"path": "res://Framework/Figments.gd"
 }, {
 "base": "AudioStreamPlayer",
 "class": &"MusicPlayerNode",
@@ -36,7 +36,7 @@ _global_script_classes=[{
 }]
 _global_script_class_icons={
 "DirectorNode": "",
-"IO": "",
+"Figments": "",
 "MusicPlayerNode": "",
 "OverlayNode": "",
 "RootNode": ""
